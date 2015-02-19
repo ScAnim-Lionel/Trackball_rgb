@@ -51,7 +51,10 @@ void setup()
   Serial.begin(9600);
 #endif
 
+// mouse initialization
   mouse_init();
+
+// RGB led strip quick test
   for(int i = 0 ; i < 3; i++ ){
     pinMode(leds[i], OUTPUT);
     digitalWrite(leds[i], LOW);
